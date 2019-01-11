@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "Vitaliy Grinchishin"
+  },
+  "dependencies": {
+    "request": "2.81.0",
+    "fs": "0.0.1-security",
+    "pubnub": "4.17.0",
+    "md5": "2.2.1"
+  },
+  "description": "Wap3AppSession",
+  "homepage": "https://github.com/nvvetal/raks-app-session",
+  "keywords": [
+    "alexa"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "wap3-app-session",
+  "private": true,
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvvetal/raks-app-session.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
