@@ -8,7 +8,7 @@ package.json
 ```javascript
     {
         dependencies: {
-            "wap3-app-session": "git+https://github.com/nvvetal/raks-app-session.git#v1.0.1"
+            "wap3-app-session": "git+https://github.com/nvvetal/raks-app-session.git#v1.0.2"
         }
     }
 ```

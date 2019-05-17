@@ -97,7 +97,7 @@ class SessionModel{
             console.log(body);
             let r = JSON.parse(body);
             let rows = r.data;
-            if (rows.length === 0) {
+            if (!rows || rows.length === 0) {
                 if (self.debug) console.log('[fail fetch url time]', (Date.now() - t1) / 1000);
                 return callback && callback('no url data');
             }
@@ -113,10 +113,9 @@ class SessionModel{
      * @returns {Function<{String}, {Session}>}
      */
     _make(data, callback) {
-        let objData = {};
         let promises = [];
         Promise.all(promises).then(values => {
-            let obj = new Session(objData);
+            let obj = new Session(data);
             callback && callback(undefined, obj);
         }).catch(err => {
             console.log('[ERR]', err, err.stack);
